@@ -1,0 +1,702 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;900&display=swap");
+/* map con colores más usados*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+/* generalidades*/
+.hero .hero-subtítulo, .section-subtítulo {
+  color: #151515;
+  letter-spacing: 0.7em;
+  font-weight: 400;
+  text-transform: uppercase;
+  margin: 1em;
+  font-size: 1em;
+  text-align: center; }
+
+/* subtítulos en general*/
+/* SUBTÍTULOS PANTALLA MEDIA */
+@media (min-width: 480px) and (max-width: 1024px) {
+  .hero .hero-subtítulo, .section-subtítulo {
+    font-size: 0.8em; }
+  /* subtítulos en general*/ }
+
+/* SUBTÍTULOS PANTALLA PEQUEÑA */
+@media (max-width: 480px) {
+  .hero .hero-subtítulo, .section-subtítulo {
+    font-size: 0.6em; }
+  /* subtítulos en general*/ }
+
+.section-h1-principal {
+  /* títulos en general */
+  color: #151515;
+  text-align: center;
+  font-weight: 900;
+  text-transform: uppercase;
+  font-size: 2em;
+  margin-bottom: 1em;
+  animation: fadeIn 2s forwards; }
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-2em); }
+  to {
+    opacity: 1;
+    transform: translateY(0); } }
+
+/* TÍTULOS PANTALLA MEDIA */
+@media (min-width: 480px) and (max-width: 1024px) {
+  /* subtítulos en general*/ }
+
+/* TÍTULOS PANTALLA PEQUEÑA */
+@media (max-width: 480px) {
+  .section-h1-principal {
+    font-size: 1em; }
+  /* subtítulos en general*/ }
+
+body {
+  background-color: #F5DADA;
+  font-family: 'Poppins', sans-serif; }
+
+/* color de fondo y tripografía*/
+.navbar {
+  margin: 1em;
+  /* logo*/
+  /*links del nav*/
+  /*hover del nav*/ }
+  .navbar .navbar-brand {
+    color: #0C0C0C;
+    font-weight: 700;
+    font-size: 1.2em; }
+  .navbar .nav-item .nav-link {
+    color: #0C0C0C;
+    font-weight: 600;
+    text-decoration: none;
+    font-size: 1em;
+    padding: .1em 1em;
+    transition: all 1s; }
+  .navbar .nav-link:hover {
+    background-color: #F19783; }
+
+/* NAV PANTALLA MEDIA */
+@media (min-width: 480px) and (max-width: 1024px) {
+  .navbar {
+    margin: 1em;
+    /* logo*/ }
+    .navbar .navbar-brand {
+      font-size: .9em; }
+    .navbar .nav-item .nav-link {
+      font-size: 1.1em; } }
+
+/* NAV PANTALLA PEQUEÑA */
+@media (max-width: 480px) {
+  .navbar {
+    margin: 0.3em;
+    /* logo*/ }
+    .navbar .navbar-brand {
+      font-size: 1em; }
+    .navbar .nav-item .nav-link {
+      font-size: .8em; } }
+
+/* ------------------ INDEX ------------------------------------ */
+.hero {
+  /* subtítulo extend */
+  /* títulos en index.html */
+  /* palabra PARAÍSO*/
+  /* línea palabra PARÁISO*/
+  /* keyframe palabra PARÁISO*/
+  /* rotación imagen plato */ }
+  .hero .hero-título {
+    color: #151515;
+    font-weight: 900;
+    text-transform: uppercase;
+    font-size: 4em; }
+  .hero .hero-span {
+    text-transform: uppercase;
+    display: inline-block;
+    position: relative;
+    z-index: 1; }
+  .hero .hero-span::before {
+    content: "";
+    position: absolute;
+    width: 4.6em;
+    background: #F19783;
+    height: .4em;
+    bottom: 0;
+    z-index: -1;
+    margin-left: 0, .1em;
+    margin-bottom: 0.2em;
+    animation-name: linea;
+    animation-duration: 4s;
+    transform: scaleX(1);
+    transform-origin: left; }
+
+@keyframes linea {
+  from {
+    transform: scaleX(0); }
+  to {
+    transform: scaleX(1); } }
+  .hero .hero-imagen:hover {
+    transform: rotate(180deg); }
+
+.home {
+  margin-top: 1em;
+  /* sector medio*/
+  /* linea home */
+  /* sección medio */
+  /* sección medio */ }
+  .home .linea-horizontal {
+    border: 1px solid #3A3A3A;
+    border-radius: 5px;
+    width: 5em;
+    margin-left: auto;
+    margin-right: auto; }
+  .home .texto-medio {
+    color: #3A3A3A;
+    font-size: 0.9em;
+    font-weight: bold; }
+  .home .texto-chico {
+    color: #898989;
+    font-weight: 400;
+    font-size: 0.8em; }
+
+.home2 {
+  /* sección COVID*/
+  display: flex;
+  flex-flow: row wrap;
+  /* imagen sección COVID*/ }
+  .home2 .restaurante-img {
+    max-width: 50%;
+    height: auto;
+    object-fit: cover;
+    object-position: left bottom; }
+  .home2 .home2-box {
+    /* sección COVID BOX*/
+    padding: 2em;
+    max-width: 50%;
+    text-align: left;
+    background-color: #F19783;
+    border: none;
+    /* título COVID BOX*/
+    /* línea abajo de título COVID BOX*/
+    /* botón COVID BOX*/ }
+    .home2 .home2-box .home2-título-secundario {
+      color: #151515;
+      font-weight: 700;
+      text-transform: uppercase;
+      font-size: 2em; }
+    .home2 .home2-box .home2-linea-horizontal {
+      width: 23em;
+      background: #F5DADA;
+      border: none;
+      border-radius: 2px;
+      height: .4em;
+      margin-left: 0em;
+      margin-top: 10px;
+      margin-bottom: 10px; }
+    .home2 .home2-box .boton-reserva {
+      background-color: #F19783;
+      width: 15em;
+      height: 4.5em;
+      align-items: center;
+      text-align: center;
+      text-decoration: none;
+      border: 1px solid #3A3A3A;
+      color: white;
+      font-weight: bold;
+      border-radius: .7em;
+      font-size: 0.9em;
+      padding: 5px;
+      cursor: pointer;
+      transition-duration: 0.4s;
+      margin-top: 3em;
+      /* botón hover COVID BOX*/ }
+      .home2 .home2-box .boton-reserva:hover {
+        background-color: #eec8c0;
+        transform: translatey(2px); }
+
+/* INDEX PANTALLA MEDIA */
+@media (min-width: 480px) and (max-width: 1024px) {
+  .hero {
+    /* títulos en index.html */ }
+    .hero .hero-título {
+      font-size: 3em; }
+  .home2 {
+    flex-flow: column-reverse; }
+    .home2 .restaurante-img {
+      max-width: 100%;
+      height: 15em;
+      object-fit: cover;
+      object-position: left bottom; }
+    .home2 .home2-box {
+      padding: 1.5em;
+      max-width: 100%; }
+      .home2 .home2-box .home2-título-secundario {
+        font-size: 2em; }
+      .home2 .home2-box .home2-texto {
+        font-size: 0.9em; }
+      .home2 .home2-box .home2-box-linea-horizontal {
+        width: 12em;
+        height: .2em;
+        margin-top: 10px;
+        margin-bottom: 10px; }
+      .home2 .home2-box .boton-reserva {
+        width: 15em;
+        height: 3.5em;
+        font-size: 1em;
+        margin-top: 1.5em; }
+        .home2 .home2-box .boton-reserva:hover {
+          transform: none; } }
+
+/* INDEX PANTALLA MEDIA */
+@media (max-width: 480px) {
+  .hero {
+    /* títulos en index.html */ }
+    .hero .hero-título {
+      font-size: 2em; }
+  .home2 {
+    flex-flow: column; }
+    .home2 .restaurante-img {
+      max-width: 100%;
+      height: 10em;
+      object-fit: cover;
+      object-position: left bottom; }
+    .home2 .home2-box {
+      padding: 1.5em;
+      max-width: 100%; }
+      .home2 .home2-box .home2-título-secundario {
+        font-size: 1.5em; }
+      .home2 .home2-box .home2-texto {
+        font-size: 0.8em; }
+      .home2 .home2-box .home2-box-linea-horizontal {
+        width: 12em;
+        height: .2em;
+        margin-top: 10px;
+        margin-bottom: 10px; }
+      .home2 .home2-box .boton-reserva {
+        width: 10em;
+        height: 3em;
+        font-size: 0.8em;
+        margin-top: 1em; }
+        .home2 .home2-box .boton-reserva:hover {
+          transform: none; } }
+
+/* ----------------------NOSOTROS.HTML----------------------------- */
+.nosotros {
+  background-color: #F19783;
+  padding: 1.5em;
+  /* tamaño sección NOSOTROS*/
+  /* sección NOSOTROS título*/
+  /* sección NOSOTROS subtítulo*/
+  /* línea palabra PARÁISO METAMORFOSIS**/
+  /* sección NOSOTROS texto*/ }
+  .nosotros .nosotros-titulo {
+    color: #3A3A3A;
+    font-size: 2.5em;
+    margin-bottom: 1em;
+    font-weight: bold; }
+  .nosotros .nosotros-sub {
+    color: #151515;
+    font-size: 1.5m;
+    margin-bottom: 1em; }
+  .nosotros .nosotros-sub-span {
+    position: relative;
+    z-index: 1;
+    /* línea palabra METAMORFOSIS*/ }
+    .nosotros .nosotros-sub-span::before {
+      content: "";
+      position: absolute;
+      width: 15em;
+      background: #F5DADA;
+      height: .5em;
+      bottom: 0;
+      z-index: -1;
+      margin-left: 0, .1em;
+      margin-bottom: 0.2em; }
+  @media (max-width: 400px) {
+    .nosotros .nosotros-sub-span::before {
+      display: none; } }
+  .nosotros .nosotros-texto {
+    color: #151515;
+    font-size: 1em;
+    margin-bottom: 1em;
+    line-height: 2em; }
+
+.nosotros-carousel {
+  padding-right: 0;
+  padding-left: 0; }
+
+/* márgenes carousel*/
+/* NOSOTROS PANTALLA MEDIA */
+@media (min-width: 480px) and (max-width: 1024px) {
+  .nosotros {
+    /* sección NOSOTROS título*/
+    /* sección NOSOTROS subtítulo*/
+    /* sección NOSOTROS texto*/ }
+    .nosotros .nosotros-titulo {
+      font-size: 2em; }
+    .nosotros .nosotros-sub {
+      font-size: 1.3em; }
+    .nosotros .nosotros-texto {
+      font-size: 1em;
+      line-height: 1.5em; } }
+
+/* NOSOTROS PANTALLA PEQUEÑA */
+@media (max-width: 480px) {
+  .nosotros {
+    /* sección NOSOTROS título*/
+    /* sección NOSOTROS subtítulo*/
+    /* sección NOSOTROS texto*/ }
+    .nosotros .nosotros-titulo {
+      font-size: 1.5em; }
+    .nosotros .nosotros-sub {
+      font-size: 1em; }
+    .nosotros .nosotros-texto {
+      font-size: 0.7em;
+      line-height: 1.5em; } }
+
+/*----------------- MENU.HTML-------------------------------- */
+/* subtítulo extend */
+/* título extend */
+.container-menu {
+  margin: 0 auto;
+  padding: 50px 0 0;
+  max-width: 100vh;
+  margin-bottom: 10px;
+  /* panel*/ }
+  .container-menu .panel {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 15px 25px;
+    width: 100%;
+    display: flex;
+    flex-flow: row nowrap;
+    box-shadow: 0px 10px 13px -6px rgba(0, 0, 0, 0.08), 0px 20px 31px 3px rgba(0, 0, 0, 0.09), 0px 8px 20px 7px rgba(0, 0, 0, 0.02);
+    /* menu-pasos*/ }
+    .container-menu .panel .menu-pasos {
+      border-bottom: 1px solid #e1f1ff;
+      padding: 25px;
+      text-align: center;
+      /* menu generalidades */
+      /* menu imagen */
+      /* menu header */
+      /* menu contenido */
+      /* menu contenido item */
+      /* menu precio */
+      /* menu botón */ }
+      .container-menu .panel .menu-pasos .menu-pasos__menu-img {
+        margin-bottom: 25px;
+        max-width: 100%; }
+      .container-menu .panel .menu-pasos .menu-pasos__menu-header {
+        color: #3A3A3A;
+        font-weight: 600;
+        letter-spacing: 6px;
+        font-size: 2em; }
+      .container-menu .panel .menu-pasos .menu-pasos__menu-contenido {
+        color: #3A3A3A;
+        font-weight: 600;
+        letter-spacing: 0.2px;
+        margin: 50px 0 25px; }
+      .container-menu .panel .menu-pasos .menu-pasos__menu-contenido-item {
+        border-top: 1px solid #F19783;
+        font-size: 12px;
+        line-height: 1.5;
+        padding: 15px 0;
+        list-style: none; }
+        .container-menu .panel .menu-pasos .menu-pasos__menu-contenido-item .no {
+          opacity: 30%;
+          color: #F19783; }
+      .container-menu .panel .menu-pasos .menu-pasos__menu-precio {
+        color: #F19783;
+        display: block;
+        font-size: 32px;
+        font-weight: 700; }
+      .container-menu .panel .menu-pasos .menu-pasos__menu-boton {
+        border: 1px solid #F19783;
+        border-radius: 10px;
+        color: #F19783;
+        display: inline-block;
+        margin: 25px 0;
+        padding: 15px 35px;
+        text-decoration: none;
+        transition: all 150ms ease-in-out; }
+      .container-menu .panel .menu-pasos .menu-pasos__menu-boton:hover,
+      .container-menu .panel .menu-pasos .menu-pasos__menu-precio:focus {
+        background-color: #eec8c0; }
+
+/* container-menu*/
+/* MENU PANTALLA MEDIA */
+@media (min-width: 480px) and (max-width: 900px) {
+  .container-menu {
+    padding: 0 0 25px;
+    max-width: 70vh; }
+    .container-menu .panel {
+      flex-direction: column; }
+      .container-menu .panel .menu-pasos {
+        /* menu header */
+        /* menu contenido item */
+        /* menu precio */
+        /* menu botón */ }
+        .container-menu .panel .menu-pasos .menu-pasos__menu-header {
+          font-size: 1em; }
+        .container-menu .panel .menu-pasos .menu-pasos__menu-contenido-item {
+          font-size: 0.7em; }
+        .container-menu .panel .menu-pasos .menu-pasos__menu-precio {
+          font-size: 1.5em; }
+        .container-menu .panel .menu-pasos .menu-pasos__menu-boton {
+          padding: 10px 25px; } }
+
+/* MENU PANTALLA PEQUEÑA */
+@media (max-width: 480px) {
+  .container-menu {
+    padding: 0 0 25px;
+    max-width: 45vh; }
+    .container-menu .panel {
+      flex-direction: column; }
+      .container-menu .panel .menu-pasos {
+        /* menu header */
+        /* menu contenido item */
+        /* menu precio */ }
+        .container-menu .panel .menu-pasos .menu-pasos__menu-header {
+          font-size: 0.8em; }
+        .container-menu .panel .menu-pasos .menu-pasos__menu-contenido-item {
+          font-size: 0.6em; }
+        .container-menu .panel .menu-pasos .menu-pasos__menu-precio {
+          font-size: 1em; } }
+
+/* ---------------RESERVA.HTML ------------------*/
+.reservas-imagen {
+  background-image: url("/assets/images/reservasimg.png");
+  background-color: #F5DADA;
+  background-position: right top;
+  background-repeat: no-repeat;
+  background-size: 30em;
+  position: relative; }
+
+/* imagen de fondo */
+.título-reserva {
+  color: #F19783;
+  letter-spacing: 0.2em;
+  font-weight: 400;
+  text-transform: uppercase;
+  font-size: 1em;
+  font-weight: bold; }
+
+/* título cená con nosotros */
+.card {
+  margin-left: 10px;
+  margin-right: 10px; }
+
+/*container */
+.fieldset-principal {
+  /* container blanco */
+  border-style: none;
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 3em;
+  margin-bottom: 2em;
+  box-shadow: 0px 10px 13px -6px rgba(0, 0, 0, 0.08), 0px 20px 31px 3px rgba(0, 0, 0, 0.09), 0px 8px 20px 7px rgba(0, 0, 0, 0.02);
+  /* labels del formulario */
+  /* bordes del labels del formulario */
+  /* bordes del labels del formulario */
+  /* botón del formulario */
+  /* botón del formulario */
+  /* errores */ }
+  .fieldset-principal label {
+    color: #333; }
+  .fieldset-principal .form-control {
+    border-radius: 10px;
+    border-color: #F19783;
+    border-style: solid;
+    padding: 0.5em; }
+  .fieldset-principal input[type=text]:focus,
+  .fieldset-principal input[type=date]:focus,
+  .fieldset-principal input[type=email]:focus,
+  .fieldset-principal #form_message:focus,
+  .fieldset-principal #form_need:focus,
+  .fieldset-principal select:focus {
+    box-shadow: 0 0 8px #F19783;
+    border: 1px solid #F19783; }
+  .fieldset-principal input[type=submit], .fieldset-principal input[type=button] {
+    background: #F19783;
+    width: 50%;
+    margin: 1em;
+    padding: 8px 15px 8px 15px;
+    border: none;
+    color: #fff; }
+  .fieldset-principal input[type=submit]:hover, .fieldset-principal input[type=button]:hover {
+    background: #898989; }
+  .fieldset-principal .help-block.with-errors {
+    color: #ff5050;
+    margin-top: 5px; }
+
+/* container blanco */
+@media (min-width: 360px) and (max-width: 780px) {
+  label {
+    color: #333;
+    font-size: 0.5em; }
+  /* labels del formulario */
+  .form-control {
+    font-size: 0.7em; }
+  input[type=submit], input[type=button] {
+    width: 40%;
+    margin: 0.5em;
+    padding: 8px 15px 8px 15px;
+    border: none;
+    color: #fff;
+    font-size: 0.8em; }
+  /* botón del formulario */ }
+
+/* ---------------CONTACTO.HTML--------------------------- */
+.card {
+  /* container general*/
+  background-color: #FFFFFF;
+  padding: 0;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+  box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.14), 0 1px 10px 0 rgba(0, 0, 0, 0.12), 0 2px 4px -1px rgba(0, 0, 0, 0.3);
+  /* efecto de hover*/
+  /* título DIRECCIÓN*/
+  /* margen para dirección*/
+  /* dirección estilos*/
+  /* ·container-suscribirse*/ }
+  .card:hover {
+    box-shadow: 0 16px 24px 2px rgba(0, 0, 0, 0.14), 0 6px 30px 5px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 0, 0, 0.3);
+    color: black; }
+  .card .card-title {
+    color: #F19783; }
+  .card address {
+    margin-bottom: 0px; }
+  .card .dirección-texto {
+    font-size: 1.2em;
+    color: #F19783;
+    margin: 0;
+    border-top: 1px solid #F19783;
+    border-bottom: 1px solid #F19783;
+    line-height: 1.5;
+    padding: 15px 0;
+    list-style: none; }
+  .card #container-suscribirse {
+    letter-spacing: 2px;
+    font-size: 1.2em;
+    color: #3A3A3A;
+    margin: 0;
+    margin-top: 1em;
+    text-align: center; }
+    .card #container-suscribirse .suscribirse-email {
+      width: 210px;
+      text-align: center;
+      border-radius: 5px;
+      background: #eee;
+      padding: 1em 2em;
+      outline: none;
+      border: none;
+      color: #151515;
+      transition: 0.3s linear; }
+      .card #container-suscribirse .suscribirse-email::placeholder {
+        color: #999; }
+      .card #container-suscribirse .suscribirse-email:focus {
+        background: #F19783; }
+    .card #container-suscribirse .boton-suscribirse {
+      background-color: #F19783;
+      box-shadow: 0 3px 10px -2px gray;
+      padding: 0.5em 1.9em;
+      margin: 2.3em 0 0 0;
+      border-radius: 4px;
+      font-size: 1.4em;
+      cursor: pointer;
+      color: #FFFFFF;
+      font-size: 1em;
+      outline: none;
+      border: none;
+      transition: 0.3s linear; }
+      .card #container-suscribirse .boton-suscribirse:hover {
+        transform: translatey(2px); }
+
+/* .card */
+/* CONTACTO PANTALLA MEDIA */
+@media (min-width: 480px) and (max-width: 1024px) {
+  .card {
+    /* título DIRECCIÓN*/
+    /* dirección estilos*/
+    /* ·container-suscribirse*/ }
+    .card .card-title {
+      font-size: 1em; }
+    .card .dirección-texto {
+      font-size: 1em; }
+    .card #container-suscribirse {
+      letter-spacing: 1.5px;
+      font-size: 1em; }
+      .card #container-suscribirse .suscribirse-email {
+        font: 1em; }
+      .card #container-suscribirse .boton-suscribirse {
+        font-size: 1em; } }
+
+/* CONTACTO PANTALLA PEQUEÑA */
+@media (max-width: 480px) {
+  .card {
+    /* título DIRECCIÓN*/
+    /* dirección estilos*/
+    /* ·container-suscribirse*/ }
+    .card .card-title {
+      font-size: 0.7em; }
+    .card .dirección-texto {
+      font-size: 0.7em; }
+    .card #container-suscribirse {
+      letter-spacing: 1px;
+      font-size: 0.7em; } }
+
+/* ------------------FOOTER------------------------------------ */
+.footer {
+  display: flex;
+  justify-content: space-around;
+  flex-flow: column nowrap;
+  background-color: #151515;
+  color: #F5DADA;
+  flex-basis: 100%;
+  height: 7em;
+  /* .footer-ul */
+  /* li */ }
+  .footer .footer-ul {
+    padding: 1em;
+    list-style: none;
+    text-align: center;
+    font-size: 0.7em;
+    line-height: 1.6;
+    margin-bottom: 0;
+    /* a */ }
+    .footer .footer-ul a {
+      color: inherit;
+      text-decoration: none;
+      opacity: 0.8; }
+      .footer .footer-ul a:hover {
+        opacity: 1; }
+  .footer .footer-li {
+    padding: 0 10px;
+    display: inline-block; }
+  .footer li {
+    display: inline-block;
+    /* hover */ }
+    .footer li:hover ~ li p {
+      animation: saludo 0.3s infinite; }
+
+@keyframes saludo {
+  0%,
+  100% {
+    transform: rotate(0deg); }
+  25% {
+    transform: rotate(20deg); }
+  75% {
+    transform: rotate(-15deg); } }
+  .footer .footer-copyright {
+    margin-top: 1em;
+    font-size: 0.8em;
+    color: #F19783;
+    margin-bottom: 1em;
+    text-align: center; }
+
+/* .footer */
